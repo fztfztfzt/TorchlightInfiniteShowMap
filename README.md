@@ -1,0 +1,2 @@
+# TorchlightInfiniteShowMap
+在选择地图界面显示小地图和地图怪物信息，需要配置地图名字位置
