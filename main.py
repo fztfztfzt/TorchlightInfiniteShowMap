@@ -74,11 +74,12 @@ class MapWidget(QtWidgets.QWidget):
             return
         self.curname = name
         if name:
-            self.show()
             path = f'map/{name}.jpg'
             if not os.path.exists(path):
-                self.ui.map.setText(f"识别的名字{name},可手动修改文件名匹配下")
+                print(f"识别的名字{name},可手动修改文件名匹配下")
+                self.hide()
             else:
+                self.show()
                 mapName = f'map/{name}.jpg'
                 pix = QtGui.QPixmap(mapName)
                 size =pix.size()
